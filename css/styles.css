@@ -1,0 +1,313 @@
+:root {
+    --blue: #1a5f7a;
+    --green: #2d9596;
+    --white: #f5f5f5;
+    --black: #333;
+    --red: #FF0000;
+    --lightblue: #1E90FF;
+    --greenlight: #32CD32;
+    --orange: #FF4500;
+    --gold: #FFD700;
+    --orangelight: #FF8C00;
+    --purple: #800080;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+
+.hero {
+    background-image: url("../images/cabinet.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1b811b; 
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about .btn {
+    background-color: #1b811b; 
+}
+
+
+/*A propos*/
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vertical-bar {
+    width: 5px;
+    height: 40px;
+    background-color: #209220;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+/*Raison d'être*/
+.raison-etre {
+    background-color: #eaeaea; 
+    border: 2px solid #1b811b; 
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.raison-etre p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    margin: 0;
+}
+
+/*Nos Valeurs et nos services*/
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.value-item {
+    flex: 0 0 calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        justify-content: center; 
+    }
+
+    .value-item {
+        flex: 0 0 calc(50% - 20px); 
+    }
+}
+
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-item i {
+    margin-bottom: 20px;
+}
+
+.value-item h3 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.value-item p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/*Nos équipes */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin: 15px;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.image-caption,
+.image-role {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+
+.modal-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.linkedin-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.about, .mission, .values, .services, .sectors, .stats, .team, .news, .partners {
+    padding: 35px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.values-grid, .services-grid, .sectors-grid, .team-grid, .news-grid, .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.value-item, .service, .sector, .team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Nos Compteurs*/
+
+.stats {
+    background-color: #68975c;
+    color: var(--white);
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.partners img {
+    height: 50px;
+    margin: 10px;
+}
+
+
+
+

@@ -1,0 +1,130 @@
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #618b56, #d9eed9);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container-intro {
+    text-align: center;
+    padding: 30px 10px;
+    color: #fff;
+}
+
+.container-intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Collamore Neck', Arial, sans-serif;
+}
+
+.container-intro p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Collamore Neck', Arial, sans-serif;
+}
+
+.container-message {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.message-content {
+    flex: 1;
+    padding-right: 20px;
+    font-family: 'Collamore Neck', Arial, sans-serif;}
+
+.message-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.message-image {
+    flex: 1;
+    text-align: center;
+}
+
+.message-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.container-recruitment {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vertical-bar {
+    width: 4px;
+    height: 40px;
+    background-color: #8ca6c0;
+    margin-right: 10px;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.no-offers {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.no-offers p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.no-offers a {
+    text-decoration: none;
+    color: #2b80d3;
+    font-weight: 700;
+}
+
+.no-offers a:hover {
+    color: #6dd5fa;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

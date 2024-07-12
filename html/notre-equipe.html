@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/stylesNavbar.css">
+    <link rel="stylesheet" href="../css/stylesFooter.css">
+    <link rel="stylesheet" href="../css/stylesEquipes.css">
+</head>
+<body>
+    <div id="navbar"></div>
+   
+    <div class="container">
+        <div class="section-header">
+            <div class="vertical-bar"></div>
+            <h2>Une équipe d'experts dédiés aux problématiques des collectivités locales</h2>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/thierry.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Thierry FOUCAUD</div>
+                    <div class="title">Président - Fondateur</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Secteur sportif et conseil en management.
+                <br><br>
+                <strong>Biographie :</strong> Titulaire d'un Master en droit et économie du sport 
+                de l'université de Limoges, Thierry Foucaud possède plus de 30 ans 
+                d'expérience dans le secteur sportif. Il a occupé des postes de Directeur
+                 d'une ligue professionnelle et de clubs professionnels avant de fonder 
+                 sa structure de conseil TF Sport Consulting en 2009. Son expertise couvre 
+                 principalement le conseil en management au service des entreprises, en particulier 
+                 celles de l'Économie Sociale et Solidaire (ESS).
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/vermeulen.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Philippe Vermeulen</div>
+                    <div class="title">Directeur Général</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Secteur des collectivités territoriales.
+                <br><br>
+                <strong>Biographie :</strong> Titulaire d’un Master RH spécialité RSE. 
+                Ancien Directeur de service, et Administrateur d’une fédération Nationale.
+                 Il occupa également des fonctions de pilote régional du Conseil social du 
+                 mouvement sportif (CosMos) en Nouvelle Aquitaine.
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/ficquet.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">François FICQUET</div>
+                    <div class="title">Consultant associé</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Stratégie & Management des organisations.
+                <br><br>
+                <strong>Biographie :</strong> Ancien responsable de service au sein de collectivités 
+                territoriales et directeur général d'une structure couvrant les secteurs de la gestion 
+                d'équipements et du conseil en management. Formation initiale en gestion et administration 
+                des organisations, complétée par des études à Sciences Po et à l'IAE de Paris Sorbonne. 
+                Spécialiste des questions économiques et sociales, il préside une association, siège au 
+                conseil des Prud'hommes et intervient dans des conférences liées à l'ESS et au développement 
+                économique des territoires.
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/fourrage.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Françoise FOURRAGE</div>
+                    <div class="title">Consultante associée</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Finances & Comptabilité.
+                <br><br>
+                <strong>Biographie :</strong> Diplômée en expertise comptable, elle travaille depuis plus
+                 de 20 ans auprès des entreprises, associations, professions indépendantes 
+                 et libérales. Experte en comptabilité, finances, gestion de patrimoine, 
+                 droit fiscal, droit social et droit des entreprises. Spécialisée dans 
+                 l'analyse des systèmes de gestion et de contrôles, bilans d'exécution, 
+                 et situation des entreprises d'un point de vue économique, juridique, 
+                 financier et social.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/martins.png" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">José MARTINS</div>
+                    <div class="title">Consultante associée</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Études & Marketing
+                <br><br>
+                <strong>Biographie :</strong> Plus de dix ans d'expérience dans les études 
+                marketing et le conseil aux entreprises. Titulaire d'un DESS 
+                "Marketing quantitatif" de l'IAE de Grenoble, complété par 
+                un diplôme en Management des entreprises et en Techniques de 
+                commercialisation. Expert en stratégie marketing, études 
+                quantitatives, gestion de projet, négociation commerciale 
+                et management.            
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/camardese.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Michaël CAMARDESE</div>
+                    <div class="title">Consultant ad hoc</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Coach certifié & Gestion des Ressources Humaines.
+                <br><br>
+                <strong>Biographie :</strong> Après un parcours de plus de 15 ans tant que manager 
+                (ingénieur chef de projets, cadre logisticien, responsable HSE et directeur de production), 
+                il s’oriente vers le conseil aux entreprises et la formation (enseignement RH à l’IAE de
+                 Paris et le coaching (ICF)).<br>
+                Ingénieur CESI, titulaire d’un DESS « Ressources Humaines et RSE » et d’un DEA en
+                Management des Organisations, il s'est formé au coaching professionnel à l’Institut
+                international Mozaîk de Paris. Membre de l'International Coach Fédération (ICF), il enseigne
+                à l'université (notamment à l'IAE de Paris)             
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/noblet.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Virginie NOBLET</div>
+                    <div class="title">Consultant ad hoc</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Sociologie & Ingénierie de projet.
+                <br><br>
+                <strong>Biographie :</strong> Titulaire d’un Master de Sociologie appliqué au développement local de l’Université de Lyon
+                et d’une maîtrise en Sciences de l’éducation, elle œuvre depuis plus de 15 ans auprès des
+                acteurs associatifs, des habitants, de usagers, d’élus, d’experts et salariés du secteur privé et
+                public.<br>
+                Son expertise repose sur la confrontation des pratiques sociales, la compréhension de situation
+                complexe et l’intégration aux modes de fonctionnements, et ce, grâce à une sociologieappliquée au développement local et territorial en direction des collectivités publiques et des
+                entreprises.<br>
+                Sa spécialité en matière d’analyse sociologique lui permet de mettre en lumière des situations
+                complexes et ainsi d’accompagner les prises de décisions stratégiques. Ses domaines
+                d’intervention privilégiés : la démocratie participative, les processus de concertation et de co-
+                constrution, l’évaluation des dispositifs et des politiques publiques, la stratégie et l’animation
+                et la conduite de projets structurants.            
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="profile-section">
+                <img src="../images/ghislaine.jpeg" alt="Photo de profil" class="profile-img">
+                <div class="info">
+                    <div class="name">Ghislaine GRAINDORGE</div>
+                    <div class="title">Collaboratrice</div>
+                </div>
+            </div>
+            <button class="more-btn" onclick="toggleInfo(this)">
+                <span class="arrow right">➤</span>
+                <strong>En savoir plus</strong>
+            </button>
+            <div class="hidden-info">
+                <strong>Expertise :</strong> Attachée de direction.
+                <br><br>
+                <strong>Biographie :</strong> Spécialiste du management et gestion 
+                de projet, elle intervient principalement au niveau du suivi des 
+                études et audits en coordonnant les interventions pour y assurer 
+                l'interface entre les différents acteurs des missions.
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo img {
+    height: 70px; 
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ffffff;
+    color: #1b811b; 
+    transition: color 0.3s, border-bottom 0.3s; 
+}
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+
+
+
+
+.nav-links .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 450px;
+    padding: 10px 0;
+}
+
+.nav-links .submenu li {
+    position: relative;
+    padding: 10px 20px; 
+}
+
+.nav-links li {
+    position: relative; 
+}
+
+.nav-links li:hover .submenu {
+    display: block;
+}
+
+.dropdown-btn .arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.dropdown-btn.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #f5f5f5;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333333;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links .submenu {
+        position: static; 
+        display: none;
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 5px; 
+        border-top: 1px solid #555; 
+        border-bottom: 1px solid #555; 
+    }
+
+    .nav-links .submenu li {
+        padding: 5px 10px;
+        padding: 7px 20px; 
+    }
+}
