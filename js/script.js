@@ -180,6 +180,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPage = window.location.pathname.split("/").pop();
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-card");
 
     function showTimelineItems(entries, observer) {
