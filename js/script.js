@@ -141,26 +141,6 @@ document.addEventListener("DOMContentLoaded", function() {
             navLinks.classList.toggle('active');
 
         });
-        
-        
-         const navLinksArray = document.querySelectorAll('.nav-links a');
-    const currentPage = window.location.pathname;
-    
-    const aboutPagePath = '/NewSynergy360/html/a-propos.html';
-    const homePagePath = '/NewSynergy360/index.html';
-    
-    navLinksArray.forEach(link => {
-        const linkPath = new URL(link.href).pathname;
-    
-        if (linkPath === currentPage) {
-            link.classList.add('active');
-        }
-
-        if (currentPage === aboutPagePath && linkPath === homePagePath) {
-        if ((currentPage === aboutPagePath && linkPath === homePagePath)||(currentPage === '/NewSynergy360/' && linkPath === homePagePath)) {
-            link.classList.add('active');
-        }
-    });
     
 
     document.getElementById('footer').innerHTML = `
