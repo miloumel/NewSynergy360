@@ -164,19 +164,8 @@ header {
 }
 
 .gallery-item {
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 24px;
-  color: #fff;
-  background-color: #333;
-  border-radius: 50%;
-  padding: 5px;
-  cursor: pointer;
+    margin: 15px;
+    text-align: center;
 }
 
 .gallery-image {
