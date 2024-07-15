@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "flex";
             modalImage.src = img.src;
             modalCaption.innerHTML = `<strong>${caption}</strong><br>${role}`;
-            linkedinButton.href = `https://www.linkedin.com/in/${caption.toLowerCase().replace(' ', '-')}`; // Assurez-vous que cela correspond à l'URL LinkedIn réelle
+            linkedinButton.href = `https://www.linkedin.com/in/${caption.toLowerCase().replace(' ', '-')}`; 
             parcoursButton.onclick = () => {
                 alert(`Le parcours de ${caption}`);
             };
