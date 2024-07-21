@@ -107,12 +107,12 @@ document.addEventListener("DOMContentLoaded", function() {
                                 Expertises/Nos services <span class="arrow-icon"><i class="fas fa-chevron-down"></i></span>
                             </a>
                             <ul class="submenu">
-                                <li><a href="#">Innovation sociale</a></li>
-                                <li><a href="#">Pilotage stratégique</a></li>
-                                <li><a href="#">Audit et diagnostic stratégique</a></li>
-                                <li><a href="#">Conseil en organisation et management</a></li>
-                                <li><a href="#">Déploiement stratégique et business plan</a></li>
-                                <li><a href="#">Accompagnement dans la mise en place du plan</a></li>
+                                <li><a href="/NewSynergy360/html/innovation.html">Innovation sociale</a></li>
+                                <li><a href="/NewSynergy360/html/pilotage.html">Pilotage stratégique</a></li>
+                                <li><a href="/NewSynergy/html/audit.html">Audit et diagnostic stratégique</a></li>
+                                <li><a href="/NewSynergy360/html/conseil.html">Conseil en organisation et management</a></li>
+                                <li><a href="/NewSynergy360/html/deploiement.html">Déploiement stratégique et business plan</a></li>
+                                <li><a href="/NewSynergy360/html/accompagnement.html">Accompagnement dans la mise en place du plan</a></li>
                             </ul>
                         </li>                        
                         
