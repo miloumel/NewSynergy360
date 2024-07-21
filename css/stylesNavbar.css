@@ -51,15 +51,16 @@ nav a {
     text-decoration: none;
     color: var(--white);
     font-weight: bold;
-    padding: 5px 10px; /* Add padding for better spacing */
-    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
 }
 
 nav a:hover {
-    border: 2px solid #1b811b; /* Green border on hover */
-    background-color: #ffffff; /* Optional: background color change on hover */
-    color: #1b811b; /* Text color change on hover */
-    transition: color 0.3s, border 0.3s, background-color 0.3s; /* Smooth transitions */
+    outline: 2px solid #1b811b; 
+    background-color: #ffffff; 
+    color: #1b811b; 
+    transition: color 0.3s, outline 0.3s, background-color 0.3s; 
 }
 
 nav a.active {
