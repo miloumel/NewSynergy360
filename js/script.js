@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <ul class="submenu">
                                 <li><a href="/NewSynergy360/html/innovation.html">Innovation sociale</a></li>
                                 <li><a href="/NewSynergy360/html/pilotage.html">Pilotage stratégique</a></li>
-                                <li><a href="/NewSynergy/html/audit.html">Audit et diagnostic stratégique</a></li>
+                                <li><a href="/NewSynergy360/html/audit.html">Audit et diagnostic stratégique</a></li>
                                 <li><a href="/NewSynergy360/html/conseil.html">Conseil en organisation et management</a></li>
                                 <li><a href="/NewSynergy360/html/deploiement.html">Déploiement stratégique et business plan</a></li>
                                 <li><a href="/NewSynergy360/html/accompagnement.html">Accompagnement dans la mise en place du plan</a></li>
@@ -183,7 +183,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.nav-links a');
     const currentPage = window.location.pathname.split("/").pop();
 
+    console.log("Current page:", currentPage); // Debugging
+
     navLinks.forEach(link => {
+        console.log("Link href:", link.getAttribute('href')); // Debugging
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
         }
@@ -194,6 +197,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentPage = window.location.pathname.split("/").pop();
     const expertiseLink = document.querySelector('a[href="nos-services.html"]');
     
+    console.log("Current page for submenu:", currentPage); // Debugging
+
     const submenuPages = [
         'pilotage.html',
         'accompagnement.html',
@@ -204,9 +209,11 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
     
     if (submenuPages.includes(currentPage)) {
+        console.log("Submenu page matched:", currentPage); // Debugging
         expertiseLink.classList.add('highlight-green');
     }
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-card");
