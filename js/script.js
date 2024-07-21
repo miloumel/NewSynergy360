@@ -191,6 +191,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+    const expertiseLink = document.querySelector('a[href="nos-services.html"]');
+    
+    const submenuPages = [
+        'pilotage.html',
+        'accompagnement.html',
+        'audit.html',
+        'deploiement.html',
+        'innovation.html',
+        'conseil.html'
+    ];
+    
+    if (submenuPages.includes(currentPage)) {
+        expertiseLink.classList.add('highlight-green');
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const timelineItems = document.querySelectorAll(".timeline-card");
 
     function showTimelineItems(entries, observer) {
