@@ -32,7 +32,6 @@ section.visible {
     transform: translateY(0);
 }
 
-
 h2 {
     font-size: 2em;
     color: #010a01c4;
@@ -42,12 +41,11 @@ h2 {
 
 .vertical-bar {
     display: inline-block;
-    border-left: 5px solid green; 
+    border-left: 5px solid green;
     padding-left: 10px;
-    height: 1.5em; 
-    vertical-align: middle; 
+    height: 1.5em;
+    vertical-align: middle;
 }
-  
 
 #cta {
     background: linear-gradient(45deg, #4567b7, #8bc34a);
@@ -87,8 +85,8 @@ h2 {
 }
 
 #cta button a {
-    color: #fff; 
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
 }
 
 #cta button:hover {
@@ -119,7 +117,6 @@ h2 {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    /*background-color: #4567b7;*/
     background: linear-gradient(45deg, #4567b7, #8bc34a);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -189,10 +186,132 @@ h2 {
     margin-bottom: 15px;
 }
 
+@media (max-width: 1024px) {
+    main {
+        padding: 0 15px;
+    }
 
-@media (max-width: 768px) {
-    #services h2{
-        margin-bottom: 60px; 
+    section {
+        margin: 40px 0;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #cta {
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+
+    #cta h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    #cta button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .side-nav {
+        padding: 8px;
+    }
+
+    .side-nav ul li a {
+        font-size: 1.3em;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
     }
 }
 
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        width: 100%;
+        margin: 30px 0;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    #cta {
+        padding: 20px 10px;
+        margin-top: 30px;
+    }
+
+    #cta h2 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    #cta button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .side-nav {
+        padding: 5px;
+    }
+
+    .side-nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+
+    .service-item ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .service-item h3 {
+        font-size: 1.2em;
+    }
+
+    #cta h2 {
+        font-size: 1.4em;
+    }
+
+    #cta button {
+        padding: 6px 12px;
+        font-size: 0.7em;
+    }
+
+    .side-nav ul li a {
+        font-size: 1em;
+    }
+
+    #services h2{
+        margin-bottom: 60px; 
+    }
+    
+    .service-item {
+        padding: 10px;
+    }
+
+    .service-item ul {
+        padding-left: 10px;
+    }
+}
