@@ -259,7 +259,7 @@ h2 {
 
 
 @media (max-width: 768px) {
-    #vision h2, #projects h2{
+    #introduction, #vision, #services, #approach, #projects, #why-choose-us, #testimonials, #cta{
         margin-bottom: 60px; 
     }
 }
