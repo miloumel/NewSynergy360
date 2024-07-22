@@ -1,3 +1,4 @@
+/* Styles généraux pour les écrans plus grands */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -32,7 +33,6 @@ section.visible {
     transform: translateY(0);
 }
 
-
 h2 {
     font-size: 2em;
     color: #010a01c4;
@@ -47,13 +47,13 @@ h2 {
     height: 1.5em; 
     vertical-align: middle; 
 }
-  
+
 .component-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-  
+
 .component-item {
     background-color: #fff;
     border-radius: 8px;
@@ -62,7 +62,7 @@ h2 {
     transition: all 0.3s ease;
     transform: perspective(600px) rotateY(0);
 }
-  
+
 .component-item:hover {
     transform: perspective(600px) rotateY(10deg);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -187,7 +187,6 @@ h2 {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    /*background-color: #4567b7;*/
     background: linear-gradient(45deg, #4567b7, #8bc34a);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -215,4 +214,86 @@ h2 {
     color: #ff5e57;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustements pour les petits écrans */
+@media (max-width: 768px) {
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .component-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #why-choose-us ul {
+        grid-template-columns: 1fr;
+    }
+
+    #why-choose-us li {
+        width: 200px;
+        height: 150px;
+    }
+
+    #cta {
+        padding: 20px 10px;
+        margin-top: 30px;
+    }
+
+    #cta h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    #cta button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .side-nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .component-item h3 {
+        font-size: 1em;
+    }
+
+    #cta h2 {
+        font-size: 1.2em;
+    }
+
+    #cta button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .side-nav ul li a {
+        font-size: 1em;
+    }
 }
