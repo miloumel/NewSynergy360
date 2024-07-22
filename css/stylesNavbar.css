@@ -141,6 +141,7 @@ nav a.active {
         left: 0;
         background-color: #333333;
         z-index: 1;
+        overflow: hidden;
     }
 
     .nav-links li {
@@ -164,11 +165,16 @@ nav a.active {
         margin-top: 5px; 
         border-top: 1px solid #555; 
         border-bottom: 1px solid #555; 
-        width: 100%;
+        width : 100%;
     }
 
     .nav-links .submenu li {
         padding: 5px 10px;
-        padding: 7px 20px; 
+        /*padding: 7px 20px;*/
+        text-align: left;
+    }
+
+    .nav-links li:hover .submenu {
+        display: block;
     }
 }
