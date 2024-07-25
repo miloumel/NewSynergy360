@@ -181,25 +181,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.nav-links a');
-    const currentPage = window.location.pathname.split("/").pop();
+    const currentPath = window.location.pathname;
 
-    console.log("Current page:", currentPage); // Debugging
+    console.log("Current path:", currentPath); 
 
     navLinks.forEach(link => {
-        console.log("Link href:", link.getAttribute('href')); // Debugging
-        if (link.getAttribute('href') === currentPage) {
+        const linkPath = link.getAttribute('href');
+        console.log("Link href:", linkPath); 
+
+        if ((currentPath === '/' || currentPath.endsWith('index.html')) && linkPath.endsWith('index.html')) {
+            link.classList.add('active');
+        }
+        
+        else if (currentPath.endsWith(linkPath.split('/').pop())) {
             link.classList.add('active');
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const currentPage = window.location.pathname.split("/").pop();
-    const expertiseLink = document.querySelector('a[href="nos-services.html"]');
-    
-    console.log("Current page for submenu:", currentPage); // Debugging
-
+    const expertiseLink = document.querySelector('a[href$="nos-services.html"]');
     const submenuPages = [
+        'nos-services.html',
         'pilotage.html',
         'accompagnement.html',
         'audit.html',
@@ -208,9 +209,12 @@ document.addEventListener("DOMContentLoaded", function() {
         'conseil.html'
     ];
     
-    if (submenuPages.includes(currentPage)) {
-        console.log("Submenu page matched:", currentPage); // Debugging
-        expertiseLink.classList.add('highlight-green');
+    if (submenuPages.some(page => currentPath.endsWith(page))) {
+        if (expertiseLink) {
+            expertiseLink.classList.add('highlight-green');
+        } else {
+            console.log("Expertise link not found"); 
+        }
     }
 });
 
